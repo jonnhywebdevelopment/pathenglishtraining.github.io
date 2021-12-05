@@ -25,26 +25,20 @@
 }
 
 
-#content1{
+
+/* #content1{
     background: white;
     border-radius: var(--radius);
     padding-top: var(--radius);
     grid-area: logo;
-    background-image: url("logo-removebg.png");
-    background-repeat: no-repeat;
+    /* background-image: url("logo-removebg.png"); */
+    /* background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     height: auto;
-    max-width: 100%;
-    /* max-height: 95%; */
-    /* right: 2%; */
-}
+    max-width: 100%; */
+/* }  */
 
-@media (min-width: 200px){
-    #contemt1{
-        background-color: blue;
-    }
-}
 
 
 #titulo{
@@ -141,6 +135,7 @@
     padding-top: var(--radius);
     grid-area: contenido1;
     font-size: 15px;
+    
 }
 
 #contenido8{
@@ -149,4 +144,20 @@
     padding-top: var(--radius);
     grid-area: contenido2;
     font-size: 15px;
+}
+
+@media only screen and (max-width: 550px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: 
+        "logo"
+        "titulo"
+        "subtitulo"
+        "ofrece"
+        "beneficios"
+        "examenes"
+        "contenido1"
+        "contenido2";
+    }
 }
